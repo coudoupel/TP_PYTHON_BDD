@@ -1,0 +1,198 @@
+/* Style général pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour les en-têtes */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style des tableaux pour les clients, avis, menus, et plats */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Style des en-têtes des tableaux */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* Style des cellules des tableaux */
+td {
+    padding: 10px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Style des lignes alternées */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style au survol de la souris */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Ajouter un style pour les formulaires */
+form {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style des liens "Ajouter" pour les transformer en boutons */
+a {
+    background-color: #4CAF50;  /* Vert */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol du lien bouton */
+a:hover {
+    background-color: #45a049; /* Un vert légèrement plus foncé */
+}
+
+/* Style général des tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #625f5f;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Style de l'en-tête de la page */
+.page-header h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+/* Optionnel : Style des titres de chaque section */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Espacement général */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #71dfa6;
+    margin: 0;
+    padding: 0;
+}
+
+body, h2, table {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* Style pour la page d'accueil */
+.page-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page-section {
+    margin: 30px 0;
+}
+
+.page-section h2 {
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.page-section table {
+    margin-top: 10px;
+    width: 95%;
+}
+
+.page-section table th {
+    background-color: #044a91;
+    color: white;
+}
+
+.page-section table td {
+    color: #34495e;
+}
+
+

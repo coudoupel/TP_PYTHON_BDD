@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Boisson</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>Ajouter une Commande</h1>
+<form method="POST">
+    <label for="id_client">Client :</label>
+    <select name="id_client" required>
+        {% for client in clients %}
+        <option value="{{ client[0] }}">{{ client[1] }}</option>
+        {% endfor %}
+    </select><br><br>
+
+    <label for="date_commande">Date :</label>
+    <input type="date" name="date_commande" required><br><br>
+
+    <label for="prix">Prix :</label>
+    <input type="number" name="prix" step="0.01" required><br><br>
+
+    <label for="mode_paiement">Mode de Paiement :</label>
+    <input type="text" name="mode_paiement" required><br><br>
+
+    <input type="submit" value="Ajouter la Commande">
+</form>
+
+</body>
