@@ -24,6 +24,7 @@ Les différents scripts seront :
 
 ```
 │── app.py                          # Application Flask (backend)
+│── delete.py                       # Suppression de toute les données dans les tables
 │── templates/                      # Dossier des fichiers HTML
 │   │── index.html                  # Page d'accueil, liste des éléments du restaurant
 │   │── add_client.html             # Formulaire d'ajout d'un client
