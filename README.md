@@ -95,6 +95,8 @@ Lorsqu'un utilisateur arrive sur la page d'accueil de l'application, il voit plu
 -   Chaque tableau contient des données qui sont extraites de la base de données.
 -   Des liens permettent à l'utilisateur d'ajouter de nouveaux éléments dans chaque catégorie.
 
+[![Image](https://i.goopics.net/rodito.png)](https://goopics.net/i/rodito)
+
 ### Ajout d'un élément
 
 Lorsque l'utilisateur clique sur un lien pour ajouter un nouvel élément, il est redirigé vers un formulaire où il peut entrer les informations nécessaires :
@@ -108,6 +110,8 @@ Lorsque l'utilisateur clique sur un lien pour ajouter un nouvel élément, il es
 
 Les données sont ensuite envoyées via un formulaire POST et enregistrées dans la base de données.
 
+[![Image](https://i.goopics.net/2b5tqd.png)](https://goopics.net/i/2b5tqd)
+
 ### Traitement des Formulaires
 
 Chaque formulaire utilise la méthode POST pour envoyer les données à l'application Flask, qui les insère dans la base de données correspondante.
@@ -115,6 +119,8 @@ Chaque formulaire utilise la méthode POST pour envoyer les données à l'applic
 ### Visualisation des Données
 
 Après l'ajout des données, l'utilisateur est redirigé vers la page d'accueil où les informations sont affichées dans les tableaux respectifs.
+
+[![Image](https://i.goopics.net/ni8uy4.png)](https://goopics.net/i/ni8uy4)
 
 ## Conclusion
 
