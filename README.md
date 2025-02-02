@@ -124,6 +124,5 @@ Après l'ajout des données, l'utilisateur est redirigé vers la page d'accueil 
 
 ## Conclusion
 
-Ce projet est une gestion simple mais complète d'un restaurant, permettant d'ajouter et de visualiser les clients, menus, plats, boissons, avis et commandes. Utilisant Flask pour la gestion des routes et des templates HTML, ce projet offre une interface intuitive pour gérer efficacement un restaurant.
-
-Le projet peut encore être étendu en ajoutant des fonctionnalités comme la modification ou la suppression d'éléments, la gestion des réservations ou un système d'authentification pour les utilisateurs.
+Ce projet est une gestion simple d'un restaurant, permettant d'ajouter et de visualiser les clients, menus, plats, boissons, avis et commandes. Utilisant Flask pour la gestion des routes et des templates HTML.
+Le script delete.py permet de supprimer tous les éléments des tables ce qui permet de remodeliser à volonté la BDD.
