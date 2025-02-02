@@ -6,43 +6,23 @@ Ce projet est une application web qui permet de gérer les différents aspects d
 
 ## Prérequis
 
--   **Python**
--   **Flask**
--   **Base de données SQLite**
+- Création d'une VM Debian 12
+- Installation de poetry et python
+- Base de données SQLite
 
-## Installation
+Les différents scripts seront :
 
-### 1. Installer les dépendances
+- Un script pour le fonctionnement global du projet
+- Des scripts html/css pour l'interface web
+- Une BDD MySQL pour stocker les différents informations du client
 
-Installez les dépendances requises en utilisant `pip` :
+### Schéma simplifié
 
-bash
-
-CopierModifier
-
-`pip install -r requirements.txt` 
-
-### 4. Lancer l'application
-
-Lancez l'application Flask avec la commande suivante :
-
-bash
-
-CopierModifier
-
-`python app.py` 
-
-Cela démarrera un serveur local sur http://127.0.0.1:5000.
-
-----------
+[![Image](https://i.goopics.net/wbghqu.png)](https://goopics.net/i/wbghqu)
 
 ## Arborescence du Projet
 
-bash
-
-CopierModifier
-
-`Restaurant_Management/
+```
 │── app.py                          # Application Flask (backend)
 │── templates/                      # Dossier des fichiers HTML
 │   │── index.html                  # Page d'accueil, liste des éléments du restaurant
@@ -54,8 +34,7 @@ CopierModifier
 │   │── add_avis.html               # Formulaire d'ajout d'un avis
 │── static/                         # Dossier des fichiers statiques (CSS, images)
 │   │── css/style.css               # Feuille de style CSS` 
-
-----------
+```
 
 ## Fonctionnalités
 
@@ -68,19 +47,11 @@ L'application permet de :
 -   **Gérer les avis** : Ajouter des avis clients sur les services du restaurant.
 -   **Gérer les commandes** : Créer des commandes avec des informations sur le client, la date, le prix total et le mode de paiement.
 
-----------
-
-## Description des Fichiers
+## Description des scripts
 
 ### `app.py` (Flask - Python)
 
 Ce script contient la logique backend de l'application. Il gère les différentes routes de l'application, les interactions avec la base de données et les rendus des templates HTML.
-
-**Routes principales :**
-
--   `/` : Affiche la page d'accueil avec toutes les listes des éléments du restaurant (clients, menus, etc.).
--   `/add_client`, `/add_menu`, `/add_plat`, etc. : Formulaires pour ajouter de nouveaux éléments.
--   `/update_<element>` : Pour mettre à jour des éléments existants (non encore implémenté).
 
 ### `index.html` (HTML)
 
@@ -93,8 +64,6 @@ Chacune de ces pages contient un formulaire permettant à l'utilisateur d'ajoute
 ### `style.css` (CSS)
 
 La feuille de style utilisée pour styliser les pages HTML. Elle permet de rendre l'interface utilisateur agréable et cohérente.
-
-----------
 
 ## Fonctionnement
 
@@ -125,8 +94,6 @@ Chaque formulaire utilise la méthode POST pour envoyer les données à l'applic
 ### Visualisation des Données
 
 Après l'ajout des données, l'utilisateur est redirigé vers la page d'accueil où les informations sont affichées dans les tableaux respectifs.
-
-----------
 
 ## Conclusion
 
