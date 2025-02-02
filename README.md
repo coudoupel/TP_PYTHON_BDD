@@ -16,6 +16,23 @@ Les différents scripts seront :
 - Des scripts html/css pour l'interface web
 - Une BDD MySQL pour stocker les différents informations du client
 
+Pour créer la BDD :
+
+Installation de mysql :
+
+```
+sudo apt install mysql-server
+```
+
+Ajout de la database:
+
+```mysql
+CREATE DATABASE resto;
+CREATE USER 'vegeta'@'localhost' IDENTIFIED BY '***';
+GRANT ALL PRIVILEGES ON resto.* TO 'vegeta'@'localhost';
+FLUSH PRIVILEGES;
+```
+
 ### Schéma simplifié
 
 [![Image](https://i.goopics.net/wbghqu.png)](https://goopics.net/i/wbghqu)
@@ -53,6 +70,9 @@ L'application permet de :
 ### `app.py` (Flask - Python)
 
 Ce script contient la logique backend de l'application. Il gère les différentes routes de l'application, les interactions avec la base de données et les rendus des templates HTML.
+
+### `delete.py` (Python)
+Ce fichier contient le script responsable de la suppression de toutes les données dans la base de données. Il efface les enregistrements des tables principales et des tables avec des clés étrangères, garantissant une suppression complète des données du restaurant.
 
 ### `index.html` (HTML)
 
